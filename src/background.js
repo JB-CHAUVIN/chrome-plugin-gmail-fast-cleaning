@@ -1,9 +1,34 @@
 console.log('Load Gmail extension')
 
 function getSelectionText() {
-	const email = (document.querySelector("span.go").innerText || '').replace('<', '').replace('>', '');
+	let email = ''
+	const go = document.querySelector("span.go");
+
+	if(go) {
+		email = go.innerText;
+		console.log('Email "classic way"', email)
+	}
+
+	if(!email) {
+		const h3 = document.querySelector('h3.iw');
+		if(h3) {
+			email = h3.innerText;
+			console.log('Email "h3 way"', email)
+		} else {
+			console.log('No H3 found')
+		}
+	}
+
 	const selectedText = window.getSelection().toString();
-  return email || selectedText;
+	console.log('Email "selected text"', selectedText)
+
+	if(!email && !selectedText) alert('Email not found')
+
+	const theEmail = (email || selectedText).toString().replace('<', '').replace('>', '');
+
+	console.log('Email:', theEmail)
+
+  	return theEmail;
 }
 
 function handleFindEmails(variables) {
