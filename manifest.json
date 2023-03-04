@@ -1,6 +1,6 @@
 {
   "name": "Email - fast gmail inbox cleaning",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "description": "This chrome extension will allow you to fast clean your gmail inbox.",
   "homepage_url": "https://www.linkedin.com/in/jbchauvin",
