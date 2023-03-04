@@ -1,3 +1,7 @@
+# Gmail - chrome extension to delete all emails from a specific sender
+## This gmail extension allows you to delete all emails from a specific sender with just one shortcut.
+
+
 Too many emails in your Gmail inbox 🤯 ?
 
 Introducing the ultimate solution for anyone looking to clean up their Gmail inbox quickly and easily - our powerful Chrome extension! Say goodbye to cluttered and disorganized inboxes with our simple, yet effective tool that helps you stay on top of your emails and stay focused on what really matters 👌.
