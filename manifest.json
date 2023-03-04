@@ -1,13 +1,13 @@
 {
-  "name": "Email - fast inbox cleaning",
-  "version": "0.0.1",
+  "name": "Email - fast gmail inbox cleaning",
+  "version": "1.0.0",
   "manifest_version": 3,
   "description": "This chrome extension will allow you to fast clean your gmail inbox.",
-  "homepage_url": "http://extensionizr.com",
+  "homepage_url": "https://www.linkedin.com/in/jbchauvin",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icons/logo-16.png",
+    "48": "icons/logo-48.png",
+    "128": "icons/logo-128.png"
   },
   "default_locale": "en",
   "permissions": [
@@ -23,10 +23,10 @@
   "commands": {
     "delete-emails": {
       "suggested_key": {
-        "windows": "Ctrl+D",
-        "mac": "Ctrl+D"
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
       },
-      "description": "Inject a script on the page"
+      "description": "Find and delete emails"
     }
   }
 }

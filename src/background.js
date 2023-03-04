@@ -10,14 +10,10 @@ function handleFindEmails(variables) {
 	const element = document.querySelector("input.gb_jf");
 	console.log('Trying to find element', element, variables.selectionText)
 	if (element) {
-		element.value = variables.selectionText;
+		element.value = 'from:' + variables.selectionText;
 	}
 
 	document.querySelector('button.gb_sf').click()
-	setTimeout(() => {
-		const clickable = document.querySelector('.T-Jo-auh')
-		clickable.click()
-	}, 2000)
 }
 
 function actionDeleteEmails() {
@@ -46,7 +42,7 @@ function actionDeleteEmails() {
 
 chrome.commands.onCommand.addListener((command) => {
 	console.log('Command:', command)
-  if(command === 'delete-emails') {
-  	actionDeleteEmails()
-  }
+	if(command === 'delete-emails') {
+		actionDeleteEmails()
+	}
 });
